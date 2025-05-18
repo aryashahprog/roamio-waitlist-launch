@@ -65,7 +65,7 @@ const WaitlistForm: React.FC = () => {
         </form>
       ) : (
         <div className="text-center p-6 bg-green-50 rounded-lg border border-green-100 animate-fade-in">
-          <h3 className="font-semibold text-green-800 mb-2">You're on the list!</h3>
+          <h3 className="font-semibold text-green-800 mb-2">✅ You're on the list!</h3>
           <p className="text-green-700">We'll notify you when Roamio is ready.</p>
         </div>
       )}

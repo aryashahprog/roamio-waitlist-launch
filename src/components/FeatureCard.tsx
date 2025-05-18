@@ -6,11 +6,9 @@ interface FeatureCardProps {
   title: string;
   description: string;
   icon: 'calendar' | 'compass' | 'sparkles';
-  imageSrc?: string;
-  imageAlt?: string;
 }
 
-const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon, imageSrc, imageAlt }) => {
+const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon }) => {
   const cardRef = useRef<HTMLDivElement>(null);
   
   useEffect(() => {
@@ -55,21 +53,11 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon, ima
       ref={cardRef} 
       className="feature-card opacity-0 translate-y-8 transition-all duration-700"
     >
-      <div className="mb-6">
+      <div>
         {renderIcon()}
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
         <p className="text-gray-600">{description}</p>
       </div>
-      
-      {imageSrc && (
-        <div className="mt-4 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-[1.02]">
-          <img 
-            src={imageSrc} 
-            alt={imageAlt || `${title} preview`} 
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      )}
     </div>
   );
 };

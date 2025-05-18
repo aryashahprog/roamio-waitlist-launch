@@ -39,24 +39,23 @@ const Index: React.FC = () => {
             <FeatureCard 
               icon="calendar"
               title="Discover Campus Events"
-              description="Instantly find what's happening around you."
-              imageSrc="/events-preview.png"
-              imageAlt="Event discovery interface"
+              description="Instantly find what's happening around you — clubs, free food, and more."
             />
             <FeatureCard 
               icon="compass"
               title="Find Your Way"
-              description="Real-time navigation across campus."
-              imageSrc="/navigation-preview.png"
-              imageAlt="Campus navigation interface"
+              description="Real-time navigation across campus — buildings, classrooms, and events."
             />
             <FeatureCard 
               icon="sparkles"
               title="Smart Nudges"
-              description="AI-powered reminders to help you stay involved."
-              imageSrc="/reminder-preview.png"
-              imageAlt="Smart reminder interface"
+              description="AI-powered reminders so you never miss what matters."
             />
+          </div>
+          
+          {/* Tagline */}
+          <div className="text-center pt-8 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+            <p className="text-gray-500 italic">Made for students, by students.</p>
           </div>
         </div>
       </section>
