@@ -2,6 +2,8 @@
 import React, { useState } from 'react';
 import { toast } from 'sonner';
 import { submitEmail } from '../utils/api';
+import { Button } from './ui/button';
+import { Input } from './ui/input';
 
 const WaitlistForm: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -36,33 +38,33 @@ const WaitlistForm: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto animate-fade-in-up">
+    <div className="w-full max-w-md mx-auto">
       {!submitted ? (
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="flex flex-col sm:flex-row gap-3">
-            <input
+            <Input
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
               required
-              className="input-primary"
+              className="input-primary transition-all duration-300 focus:ring-4 focus:ring-roamio/20"
               disabled={isSubmitting}
             />
-            <button
+            <Button
               type="submit"
-              className="btn-primary whitespace-nowrap"
+              className="btn-primary transform transition-all duration-300 hover:scale-[1.03] hover:bg-roamio-dark"
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Joining...' : 'Join the Waitlist'}
-            </button>
+            </Button>
           </div>
           <p className="text-sm text-gray-500 text-center">
             Get early access to Roamio before we launch.
           </p>
         </form>
       ) : (
-        <div className="text-center p-6 bg-green-50 rounded-lg border border-green-100">
+        <div className="text-center p-6 bg-green-50 rounded-lg border border-green-100 animate-fade-in">
           <h3 className="font-semibold text-green-800 mb-2">You're on the list!</h3>
           <p className="text-green-700">We'll notify you when Roamio is ready.</p>
         </div>

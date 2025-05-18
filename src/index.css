@@ -66,6 +66,12 @@
   .stagger-animation > *:nth-child(3) {
     animation-delay: 0.5s;
   }
+  
+  /* Add visible class for intersection observer animation */
+  .feature-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @layer components {
@@ -78,7 +84,7 @@
   }
 
   .feature-card {
-    @apply p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-start;
+    @apply p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-500 flex flex-col;
   }
 
   .feature-icon {

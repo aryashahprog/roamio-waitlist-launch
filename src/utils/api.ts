@@ -15,6 +15,8 @@ export const submitEmail = async (email: string): Promise<SubmitEmailResponse> =
     });
 
     if (!response.ok) {
+      const errorData = await response.json().catch(() => null);
+      console.error('API error:', errorData || response.statusText);
       throw new Error('Network response was not ok');
     }
 
