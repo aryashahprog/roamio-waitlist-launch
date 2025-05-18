@@ -28,7 +28,11 @@ export default {
 				roamio: {
 					DEFAULT: '#0040c9',
 					light: '#3366dd',
-					dark: '#00328f'
+					dark: '#00328f',
+					complementary: '#C97500' // Orange complement
+				},
+				blue: {
+					50: '#EDF5FF', // Very light blue for backgrounds
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',

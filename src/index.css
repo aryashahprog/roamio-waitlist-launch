@@ -76,19 +76,19 @@
 
 @layer components {
   .btn-primary {
-    @apply bg-roamio text-white px-6 py-3 rounded-lg font-medium hover:bg-roamio-light transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-roamio;
+    @apply bg-roamio text-white px-6 py-3 rounded-lg font-medium hover:bg-roamio-dark transition-all focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-roamio;
   }
 
   .input-primary {
-    @apply px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-roamio/20 focus:border-roamio w-full;
+    @apply px-4 py-3 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-roamio/30 focus:border-roamio w-full;
   }
 
   .feature-card {
-    @apply p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md transition-all duration-500 flex flex-col;
+    @apply p-6 rounded-xl bg-white border border-blue-100 shadow-sm hover:shadow-md transition-all duration-500 flex flex-col;
   }
 
   .feature-icon {
-    @apply h-10 w-10 mb-4 text-roamio opacity-80;
+    @apply h-10 w-10 mb-4 text-roamio opacity-90;
   }
 }
 
