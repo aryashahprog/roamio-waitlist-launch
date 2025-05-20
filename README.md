@@ -1,22 +1,16 @@
-# Welcome to your Lovable project
+# Roamio Waitlist Launch
+
+This is the repository for the Roamio waitlist landing page.
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/8b48f60f-77cc-49f9-868d-a65c47c36c19
-
 ## How can I edit this code?
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/8b48f60f-77cc-49f9-868d-a65c47c36c19) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+There are several ways of editing your application:
 
 **Use your preferred IDE**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+If you want to work locally using your own IDE, you can clone this repo and push changes.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -48,7 +42,7 @@ npm run dev
 - Click on the "Code" button (green button) near the top right.
 - Select the "Codespaces" tab.
 - Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- Edit files directly within the Codespaces and commit and push your changes once you're done.
 
 ## What technologies are used for this project?
 
@@ -62,12 +56,8 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/8b48f60f-77cc-49f9-868d-a65c47c36c19) and click on Share -> Publish.
+You can deploy this project using various methods, such as Vercel, Netlify, or GitHub Pages.
 
-## Can I connect a custom domain to my Lovable project?
+## Can I connect a custom domain?
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Yes, you can connect a custom domain depending on your deployment method.
