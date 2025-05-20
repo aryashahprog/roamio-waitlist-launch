@@ -60,6 +60,23 @@ const Index: React.FC = () => {
         </div>
       </section>
 
+      {/* Our Story Section */}
+      <section className="py-16 bg-white">
+        <div className="max-container">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Story</h2>
+            <div className="prose mx-auto text-gray-600 space-y-4 text-center sm:text-left">
+              <p className="leading-relaxed">
+                We started Roamio because we're active on campus and noticed a pattern: a lot of good events went unnoticed, and many students felt out of the loop. Flyers were everywhere, but nobody was sure where to go in between classes.
+              </p>
+              <p className="leading-relaxed">
+                Roamio is our way of solving that — by making it easier to find events that actually match your interests, connect with others through shared interests, and navigate your campus stress-free.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-8 max-container">
         <div className="flex justify-center md:justify-start items-center gap-6 text-sm">
