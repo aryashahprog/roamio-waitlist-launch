@@ -35,6 +35,10 @@ const Index: React.FC = () => {
         <div className="max-container space-y-12">
           <h2 className="text-3xl font-bold text-center text-gray-800">Why Roamio?</h2>
           
+          <p className="text-xl text-center text-gray-600 max-w-2xl mx-auto">
+            College is better when you don't have to navigate it alone. We believe every student deserves to feel connected — to people, places, and opportunities.
+          </p>
+          
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
             <FeatureCard 
               icon="calendar"
@@ -52,11 +56,6 @@ const Index: React.FC = () => {
               description="AI-powered reminders so you never miss what matters."
             />
           </div>
-          
-          {/* Tagline */}
-          <div className="text-center pt-8 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-            <p className="text-gray-500 italic">Made for students, by students.</p>
-          </div>
         </div>
       </section>
 
@@ -72,6 +71,11 @@ const Index: React.FC = () => {
               <p className="leading-relaxed">
                 Roamio is our way of solving that — by making it easier to find events that actually match your interests, connect with others through shared interests, and navigate your campus stress-free.
               </p>
+            </div>
+            
+            {/* Tagline - Moved from Features section */}
+            <div className="text-center pt-8 animate-fade-in" style={{ animationDelay: "0.5s" }}>
+              <p className="text-gray-500 italic">Made for students, by students.</p>
             </div>
           </div>
         </div>
