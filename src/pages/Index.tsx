@@ -10,7 +10,7 @@ const Index: React.FC = () => {
       {/* Header/Logo */}
       <header className="py-6 px-6 max-container">
         <div className="flex justify-between items-center">
-          <h1 className="text-2xl md:text-3xl font-bold text-roamio bg-gradient-to-r from-roamio to-roamio-light bg-clip-text text-transparent">Roamio</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-roamio bg-gradient-to-r from-roamio to-roamio-light bg-clip-text text-transparent">Roamio</h1>
         </div>
       </header>
 
