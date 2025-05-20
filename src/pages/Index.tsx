@@ -66,10 +66,10 @@ const Index: React.FC = () => {
             <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Our Story</h2>
             <div className="prose mx-auto text-gray-600 space-y-4 text-center sm:text-left">
               <p className="leading-relaxed">
-                We started Roamio because we're active on campus and noticed a pattern: a lot of good events went unnoticed, and many students felt out of the loop. Flyers were everywhere, but nobody was sure where to go in between classes.
+                Roamio was born from a simple realization: even on a busy campus, it's easy to feel disconnected. As active students ourselves, we saw great events go unnoticed and classmates unsure where to go or how to get involved. Flyers were scattered, group chats were overwhelming, and finding your place felt harder than it should.
               </p>
               <p className="leading-relaxed">
-                Roamio is our way of solving that — by making it easier to find events that actually match your interests, connect with others through shared interests, and navigate your campus stress-free.
+                We created Roamio to change that — a smarter way to discover events that match your interests, connect with others who share them, and navigate campus life with confidence and ease.
               </p>
             </div>
             
