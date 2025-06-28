@@ -1,3 +1,4 @@
+
 import React from 'react';
 import FeatureCard from '../components/FeatureCard';
 import { Instagram, Linkedin, Calendar, Clock, MapPin } from 'lucide-react';
@@ -30,7 +31,7 @@ const Index: React.FC = () => {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 py-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             <div className="flex items-center gap-2 text-gray-800 font-medium">
               <Calendar size={20} className="text-roamio" />
-              <span>Thursday, July 11</span>
+              <span>Friday, July 11</span>
             </div>
             <div className="flex items-center gap-2 text-gray-800 font-medium">
               <Clock size={20} className="text-roamio" />
@@ -58,7 +59,7 @@ const Index: React.FC = () => {
                 </a>
               </Button>
               <p className="text-sm text-gray-500 text-center">
-                Takes 10 seconds. You'll get a calendar invite.
+                🎟 Limited spots. You'll get a calendar invite.
               </p>
             </div>
           </div>
@@ -120,7 +121,7 @@ const Index: React.FC = () => {
       <footer className="py-8 max-container">
         <div className="flex justify-center md:justify-start items-center gap-6 text-sm">
           <a 
-            href="https://www.instagram.com/roamio.atl" 
+            href="https://www.instagram.com/roamio.ai?igsh=dWdtNjJ1MDcyNGNt" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-roamio transition-colors duration-300 transform hover:scale-110"
