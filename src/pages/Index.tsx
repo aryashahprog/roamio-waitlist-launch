@@ -1,8 +1,8 @@
 
 import React from 'react';
-import WaitlistForm from '../components/WaitlistForm';
 import FeatureCard from '../components/FeatureCard';
-import { Instagram, Linkedin } from 'lucide-react';
+import { Instagram, Linkedin, Calendar, Clock, MapPin } from 'lucide-react';
+import { Button } from '../components/ui/button';
 
 const Index: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const Index: React.FC = () => {
       {/* Header/Logo */}
       <header className="py-6 px-6 max-container">
         <div className="flex justify-between items-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-roamio bg-gradient-to-r from-roamio to-roamio-light bg-clip-text text-transparent">Roamio</h1>
+          <h1 className="text-4xl md:text-5xl font-bold text-roamio bg-gradient-to-r from-roamio to-roamio-light bg-clip-text text-transparent">Roamio</h1>
         </div>
       </header>
 
@@ -18,14 +18,54 @@ const Index: React.FC = () => {
       <section className="flex-1 flex flex-col justify-center items-center text-center px-4 py-12 md:py-24 max-container">
         <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight animate-fade-in-up">
-            Navigate Campus Life Seamlessly
+            Roamio Social: Our First-Ever Campus Drop
           </h1>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            Discover events, find your way, and connect on campus with Roamio.
-          </p>
+          <div className="space-y-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              This isn't a networking mixer or a club meeting.
+            </p>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              It's a summer night with music, chill people, and zero pressure.
+            </p>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              We're kicking things off with our first-ever event — and you're invited.
+            </p>
+          </div>
           
-          <div className="pt-6 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <WaitlistForm />
+          {/* Event Details */}
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 py-6 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <div className="flex items-center gap-2 text-gray-700">
+              <Calendar size={20} />
+              <span className="font-medium">Thursday, July 11</span>
+            </div>
+            <div className="flex items-center gap-2 text-gray-700">
+              <Clock size={20} />
+              <span className="font-medium">7:00 PM – 11:00 PM</span>
+            </div>
+            <div className="flex items-center gap-2 text-gray-700">
+              <MapPin size={20} />
+              <span className="font-medium">HUB Atlanta</span>
+            </div>
+          </div>
+          
+          <div className="pt-6 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
+            <div className="w-full max-w-md mx-auto space-y-4">
+              <Button
+                asChild
+                className="w-full bg-roamio hover:bg-roamio-dark text-white font-semibold py-3 px-8 rounded-lg transform transition-all duration-300 hover:scale-[1.03] text-lg"
+              >
+                <a 
+                  href="https://tally.so/r/mYbOeJ" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  RSVP Now
+                </a>
+              </Button>
+              <p className="text-sm text-gray-500 text-center">
+                Instant calendar invite. Free drinks. Limited spots.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -73,7 +113,7 @@ const Index: React.FC = () => {
               </p>
             </div>
             
-            {/* Tagline - Moved from Features section */}
+            {/* Tagline */}
             <div className="text-center pt-8 animate-fade-in" style={{ animationDelay: "0.5s" }}>
               <p className="text-gray-500 italic">Made for students, by students.</p>
             </div>
