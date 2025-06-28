@@ -1,4 +1,3 @@
-
 import React from 'react';
 import FeatureCard from '../components/FeatureCard';
 import { Instagram, Linkedin, Calendar, Clock, MapPin } from 'lucide-react';
@@ -14,45 +13,41 @@ const Index: React.FC = () => {
         </div>
       </header>
 
-      {/* Hero Section */}
+      {/* Hero Section - RSVP Focused */}
       <section className="flex-1 flex flex-col justify-center items-center text-center px-4 py-12 md:py-24 max-container">
-        <div className="max-w-3xl mx-auto space-y-6">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight animate-fade-in-up">
-            Roamio Social: Our First-Ever Campus Drop
+        <div className="max-w-2xl mx-auto space-y-8">
+          {/* Headline */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 animate-fade-in-up">
+            Roamio Social – July 11 @ HUB Atlanta
           </h1>
-          <div className="space-y-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              This isn't a networking mixer or a club meeting.
-            </p>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              It's a summer night with music, chill people, and zero pressure.
-            </p>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We're kicking things off with our first-ever event — and you're invited.
-            </p>
-          </div>
+          
+          {/* Subheadline */}
+          <p className="text-xl md:text-2xl text-gray-700 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
+            Free drinks. Real people. One summer night.
+          </p>
           
           {/* Event Details */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 py-6 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <div className="flex items-center gap-2 text-gray-700">
-              <Calendar size={20} />
-              <span className="font-medium">Thursday, July 11</span>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 py-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            <div className="flex items-center gap-2 text-gray-800 font-medium">
+              <Calendar size={20} className="text-roamio" />
+              <span>Thursday, July 11</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-700">
-              <Clock size={20} />
-              <span className="font-medium">7:00 PM – 11:00 PM</span>
+            <div className="flex items-center gap-2 text-gray-800 font-medium">
+              <Clock size={20} className="text-roamio" />
+              <span>7–11 PM</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-700">
-              <MapPin size={20} />
-              <span className="font-medium">HUB Atlanta</span>
+            <div className="flex items-center gap-2 text-gray-800 font-medium">
+              <MapPin size={20} className="text-roamio" />
+              <span>960 Spring St NW, Atlanta</span>
             </div>
           </div>
           
-          <div className="pt-6 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <div className="w-full max-w-md mx-auto space-y-4">
+          {/* CTA Button */}
+          <div className="pt-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <div className="w-full max-w-sm mx-auto space-y-3">
               <Button
                 asChild
-                className="w-full bg-roamio hover:bg-roamio-dark text-white font-semibold py-3 px-8 rounded-lg transform transition-all duration-300 hover:scale-[1.03] text-lg"
+                className="w-full bg-roamio hover:bg-roamio-dark text-white font-bold py-4 px-8 rounded-lg transform transition-all duration-300 hover:scale-[1.02] text-lg shadow-lg"
               >
                 <a 
                   href="https://tally.so/r/mYbOeJ" 
@@ -63,7 +58,7 @@ const Index: React.FC = () => {
                 </a>
               </Button>
               <p className="text-sm text-gray-500 text-center">
-                Instant calendar invite. Free drinks. Limited spots.
+                Takes 10 seconds. You'll get a calendar invite.
               </p>
             </div>
           </div>
