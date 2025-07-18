@@ -1,8 +1,8 @@
 
 import React from 'react';
+import WaitlistForm from '../components/WaitlistForm';
 import FeatureCard from '../components/FeatureCard';
-import { Instagram, Linkedin, Calendar, Clock, MapPin } from 'lucide-react';
-import { Button } from '../components/ui/button';
+import { Instagram, Linkedin } from 'lucide-react';
 
 const Index: React.FC = () => {
   return (
@@ -10,58 +10,22 @@ const Index: React.FC = () => {
       {/* Header/Logo */}
       <header className="py-6 px-6 max-container">
         <div className="flex justify-between items-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-roamio bg-gradient-to-r from-roamio to-roamio-light bg-clip-text text-transparent">Roamio</h1>
+          <h1 className="text-3xl md:text-4xl font-bold text-roamio bg-gradient-to-r from-roamio to-roamio-light bg-clip-text text-transparent">Roamio</h1>
         </div>
       </header>
 
-      {/* Hero Section - RSVP Focused */}
+      {/* Hero Section */}
       <section className="flex-1 flex flex-col justify-center items-center text-center px-4 py-12 md:py-24 max-container">
-        <div className="max-w-2xl mx-auto space-y-8">
-          {/* Headline */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 animate-fade-in-up">
-            Roamio Social – July 11 @ HUB Atlanta
+        <div className="max-w-3xl mx-auto space-y-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight animate-fade-in-up">
+            Navigate Campus Life Seamlessly
           </h1>
-          
-          {/* Subheadline */}
-          <p className="text-xl md:text-2xl text-gray-700 animate-fade-in-up" style={{ animationDelay: "0.1s" }}>
-            Free drinks. Real people. One summer night.
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
+            Discover events, find your way, and connect on campus with Roamio.
           </p>
           
-          {/* Event Details */}
-          <div className="flex flex-col sm:flex-row justify-center items-center gap-6 py-4 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
-            <div className="flex items-center gap-2 text-gray-800 font-medium">
-              <Calendar size={20} className="text-roamio" />
-              <span>Friday, July 11</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-800 font-medium">
-              <Clock size={20} className="text-roamio" />
-              <span>7–11 PM</span>
-            </div>
-            <div className="flex items-center gap-2 text-gray-800 font-medium">
-              <MapPin size={20} className="text-roamio" />
-              <span>960 Spring St NW, Atlanta</span>
-            </div>
-          </div>
-          
-          {/* CTA Button */}
-          <div className="pt-4 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
-            <div className="w-full max-w-sm mx-auto space-y-3">
-              <Button
-                asChild
-                className="w-full bg-roamio hover:bg-roamio-dark text-white font-bold py-4 px-8 rounded-lg transform transition-all duration-300 hover:scale-[1.02] text-lg shadow-lg"
-              >
-                <a 
-                  href="https://tally.so/r/mYbOeJ" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                >
-                  RSVP Now
-                </a>
-              </Button>
-              <p className="text-sm text-gray-500 text-center">
-                🎟 Limited spots. You'll get a calendar invite.
-              </p>
-            </div>
+          <div className="pt-6 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
+            <WaitlistForm />
           </div>
         </div>
       </section>
@@ -109,7 +73,7 @@ const Index: React.FC = () => {
               </p>
             </div>
             
-            {/* Tagline */}
+            {/* Tagline - Moved from Features section */}
             <div className="text-center pt-8 animate-fade-in" style={{ animationDelay: "0.5s" }}>
               <p className="text-gray-500 italic">Made for students, by students.</p>
             </div>
@@ -121,7 +85,7 @@ const Index: React.FC = () => {
       <footer className="py-8 max-container">
         <div className="flex justify-center md:justify-start items-center gap-6 text-sm">
           <a 
-            href="https://www.instagram.com/roamio.ai?igsh=dWdtNjJ1MDcyNGNt" 
+            href="https://www.instagram.com/roamio.atl" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-500 hover:text-roamio transition-colors duration-300 transform hover:scale-110"
