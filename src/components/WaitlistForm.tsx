@@ -38,35 +38,33 @@ const WaitlistForm: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-md mx-auto">
+    <div className="w-full max-w-sm mx-auto">
       {!submitted ? (
         <form onSubmit={handleSubmit} className="space-y-4">
-          <div className="flex flex-col sm:flex-row gap-3">
-            <Input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Your email address"
-              required
-              className="input-primary transition-all duration-300 focus:ring-4 focus:ring-roamio/20"
-              disabled={isSubmitting}
-            />
-            <Button
-              type="submit"
-              className="btn-primary transform transition-all duration-300 hover:scale-[1.03] hover:bg-roamio-dark"
-              disabled={isSubmitting}
-            >
-              {isSubmitting ? 'Joining...' : 'Join the Waitlist'}
-            </Button>
-          </div>
-          <p className="text-sm text-gray-500 text-center">
-            Get early access to Roamio before we launch.
+          <Input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="Enter your email"
+            required
+            className="bg-gray-800 border-gray-700 text-white placeholder:text-gray-400 focus:border-roamio focus:ring-roamio/20 h-12"
+            disabled={isSubmitting}
+          />
+          <Button
+            type="submit"
+            className="w-full bg-roamio hover:bg-roamio-dark text-white h-12 font-medium"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Joining...' : 'Join Waitlist'}
+          </Button>
+          <p className="text-xs text-gray-500 text-center">
+            By clicking Sign Up you're confirming that you agree with our Terms and Conditions.
           </p>
         </form>
       ) : (
-        <div className="text-center p-6 bg-green-50 rounded-lg border border-green-100 animate-fade-in">
-          <h3 className="font-semibold text-green-800 mb-2">✅ You're on the list!</h3>
-          <p className="text-green-700">We'll notify you when Roamio is ready.</p>
+        <div className="text-center p-6 bg-gray-800 rounded-lg border border-gray-700">
+          <h3 className="font-semibold text-green-400 mb-2">✅ You're on the list!</h3>
+          <p className="text-gray-300">We'll notify you when Roamio is ready.</p>
         </div>
       )}
     </div>
