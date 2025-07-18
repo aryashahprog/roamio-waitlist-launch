@@ -13,7 +13,10 @@ const Index: React.FC = () => {
         
         {/* Tagline */}
         <h2 className="text-xl md:text-2xl text-gray-300 font-medium">
-          Spotify Discover Weekly for college events
+          Spotify Discover Weekly{' '}
+          <span className="bg-gradient-to-r from-gray-200 via-white to-gray-300 bg-clip-text text-transparent font-bold">
+            for college events
+          </span>
         </h2>
         
         {/* Waitlist Form */}
