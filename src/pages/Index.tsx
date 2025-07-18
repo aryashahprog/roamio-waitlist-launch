@@ -13,7 +13,7 @@ const Index: React.FC = () => {
         
         {/* Tagline */}
         <h2 className="text-xl md:text-2xl text-gray-300 font-medium">
-          Stay ahead of everyone
+          Spotify Discover Weekly for college events
         </h2>
         
         {/* Waitlist Form */}

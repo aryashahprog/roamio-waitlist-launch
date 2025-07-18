@@ -58,7 +58,7 @@ const WaitlistForm: React.FC = () => {
             {isSubmitting ? 'Joining...' : 'Join Waitlist'}
           </Button>
           <p className="text-xs text-gray-500 text-center">
-            By clicking Sign Up you're confirming that you agree with our Terms and Conditions.
+            Launching Soon
           </p>
         </form>
       ) : (
